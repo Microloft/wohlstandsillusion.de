@@ -2,19 +2,23 @@
 set -euo pipefail
 
 # wohlstandsillusion.de - Deployment Script
-# Atomischer Symlink-Switch mit Release-Rotation
+# =========================================
+# Pull → Build → rsync zum DocumentRoot
+#
+# Voraussetzungen:
+#   - Hugo Extended in /usr/local/bin/hugo
+#   - Repo geklont nach ~/projects/wohlstandsillusion.de
+#   - DocumentRoot existiert: /var/www/wohlstandsillusion.de
+#   - User darf rsync mit sudo nach /var/www ausführen
+#
+# Ausführung (lokal von Windows-Laptop):
+#   plink -i ~/.ssh/key.ppk microloft@w1tt3.de \
+#     bash /home/microloft/projects/wohlstandsillusion.de/deploy/deploy.sh
 
-SITE_DIR="/var/www/wohlstandsillusion.de"
-REPO_DIR="${SITE_DIR}/repo"
-RELEASES_DIR="${SITE_DIR}/releases"
-CURRENT_LINK="${SITE_DIR}/current"
-KEEP_RELEASES=5
-
-TIMESTAMP=$(date +%Y%m%d_%H%M%S)
-RELEASE_DIR="${RELEASES_DIR}/${TIMESTAMP}"
+REPO_DIR="${HOME}/projects/wohlstandsillusion.de"
+DOCROOT="/var/www/wohlstandsillusion.de"
 
 echo "=== Deploy wohlstandsillusion.de ==="
-echo "Release: ${TIMESTAMP}"
 
 # 1. Git pull
 echo "--- Git pull ---"
@@ -25,21 +29,11 @@ git pull origin main
 echo "--- Hugo build ---"
 hugo --minify --cleanDestinationDir
 
-# 3. Kopiere Build-Output in Release-Verzeichnis
-echo "--- Kopiere nach ${RELEASE_DIR} ---"
-mkdir -p "${RELEASE_DIR}"
-cp -r "${REPO_DIR}/public/." "${RELEASE_DIR}/"
+# 3. rsync zum DocumentRoot (atomar genug für statische Dateien)
+echo "--- rsync nach ${DOCROOT} ---"
+sudo rsync -av --delete "${REPO_DIR}/public/" "${DOCROOT}/"
 
-# 4. Atomischer Symlink-Switch
-echo "--- Symlink-Switch ---"
-ln -sfn "${RELEASE_DIR}" "${CURRENT_LINK}.new"
-mv -Tf "${CURRENT_LINK}.new" "${CURRENT_LINK}"
-
-echo "--- Aktiv: $(readlink -f ${CURRENT_LINK}) ---"
-
-# 5. Alte Releases aufräumen
-echo "--- Cleanup (behalte letzte ${KEEP_RELEASES}) ---"
-cd "${RELEASES_DIR}"
-ls -1d */ 2>/dev/null | head -n -${KEEP_RELEASES} | xargs -r rm -rf
+# 4. Ownership wieder auf www-data setzen
+sudo chown -R www-data:www-data "${DOCROOT}"
 
 echo "=== Deploy abgeschlossen ==="
