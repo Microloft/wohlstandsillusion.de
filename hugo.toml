@@ -3,6 +3,11 @@ locale = 'de'
 defaultContentLanguage = 'de'
 title = 'wohlstandsillusion.de'
 
+# Datums-Lokalisierung (für ".Date.Format")
+[languages.de]
+  languageName = 'Deutsch'
+  weight = 1
+
 [params]
   tagline = 'Daten zur Vermögensverteilung in Deutschland'
   description = 'Sachliche Daten und Hintergründe zur Vermögensverteilung in Deutschland. Quellen: Bundesbank, DIW, EZB, Statistisches Bundesamt. Themen: Vermögen, Renten, Pflege, Erbschaft, Steuern, Reallöhne.'
@@ -41,9 +46,14 @@ title = 'wohlstandsillusion.de'
   weight = 1
 
 [[menus.main]]
+  name = 'Artikel'
+  url = '/artikel/'
+  weight = 2
+
+[[menus.main]]
   name = 'Über'
   url = '/ueber/'
-  weight = 2
+  weight = 3
 
 [[menus.footer]]
   name = 'Über'
