@@ -1,0 +1,13 @@
+# Standard: Git managed line endings
+* text=auto
+
+# Bash-Skripte und Apache-Configs MÜSSEN LF haben (Linux-VPS)
+*.sh text eol=lf
+*.conf text eol=lf
+
+# Binärdateien
+*.woff2 binary
+*.png binary
+*.jpg binary
+*.webp binary
+*.avif binary

@@ -1,0 +1,12 @@
+<footer class="site-footer" role="contentinfo">
+  <div class="container container--wide">
+    <div class="footer-content">
+      <nav class="footer-nav" aria-label="Footer-Navigation">
+        {{ range .Site.Menus.footer }}
+        <a href="{{ .URL }}">{{ .Name }}</a>
+        {{ end }}
+      </nav>
+      <p class="footer-copy">&copy; {{ now.Year }} wohlstandsillusion.de</p>
+    </div>
+  </div>
+</footer>

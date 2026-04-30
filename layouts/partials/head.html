@@ -1,0 +1,28 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light">
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<link rel="canonical" href="{{ .Permalink }}">
+
+{{- /* Font preloads */ -}}
+<link rel="preload" href="/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/SourceSerif4Variable-Roman.otf.woff2" as="font" type="font/woff2" crossorigin>
+
+{{- /* CSS via Hugo Pipes - alle Partials zusammenführen */ -}}
+{{ $variables := resources.Get "css/_variables.css" }}
+{{ $reset := resources.Get "css/_reset.css" }}
+{{ $typography := resources.Get "css/_typography.css" }}
+{{ $layout := resources.Get "css/_layout.css" }}
+{{ $components := resources.Get "css/_components.css" }}
+{{ $css := slice $variables $reset $typography $layout $components | resources.Concat "css/main.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+
+{{- /* Open Graph and Twitter Cards */ -}}
+{{- partial "meta-og.html" . -}}
+
+{{- /* Sitemap and RSS */ -}}
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+{{ with .OutputFormats.Get "rss" -}}
+<link rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" href="{{ .Permalink }}">
+{{- end }}
