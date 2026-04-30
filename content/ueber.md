@@ -13,13 +13,13 @@ Diese Seite macht diese Daten zugänglich, ordnet sie ein und stellt Zusammenhä
 
 ![Platzhalter-Foto](/images/author-placeholder.svg)
 
-**Dirk Witte** lebt und arbeitet in Siegburg.
+**Dirk Witte** lebt in Siegburg und arbeitet in Bonn.
 
 **Beruflich** ist er als Enterprise Architekt im IT-Bereich tätig.
 
 **Kommunalpolitisch** engagiert er sich als Stadtrat in Siegburg sowie als Beisitzer im Fraktionsvorstand und im Ortsvereinsvorstand der SPD Siegburg. Im Fraktionsvorstand ist er für Digitalisierung und Öffentlichkeitsarbeit zuständig.
 
-Er ist Mitglied der SPD. Diese Mitgliedschaft wird hier offen benannt, weil Transparenz zum Anspruch dieser Seite gehört. Die Inhalte erheben den Anspruch, auf Fakten und belegten Daten zu basieren, nicht auf Parteipositionen.
+Er ist Mitglied der SPD. Diese Mitgliedschaft wird hier offen benannt, weil Transparenz zum Anspruch dieser Seite gehört. Die Inhalte erheben den Anspruch, auf Fakten und belegten Daten zu basieren, nicht auf Parteipositionen. Die Inhalte dieser Webseite werden privat verantwortet und stehen in keinem Zusammenhang mit der SPD oder einer ihrer Gliederungen.
 
 ## Warum diese Trennung?
 

@@ -1,11 +1,11 @@
 ---
 title: "wohlstandsillusion.de"
-description: "Fakten zur Vermögensverteilung in Deutschland und ihren Folgen für Sozialstaat, Renten, Pflege und Steuergerechtigkeit."
+description: "Sachliche Daten und Hintergründe zur Vermögensverteilung in Deutschland. Quellen: Bundesbank, DIW, EZB, Statistisches Bundesamt. Themen: Vermögen, Renten, Pflege, Erbschaft, Steuern, Reallöhne."
 ---
 
 ## Wohlstandsillusion -- wovon reden wir eigentlich?
 
-Deutschland gilt als eines der reichsten Länder der Welt. Doch wie ist dieser Wohlstand verteilt? Die Antwort fällt ernüchternd aus: Die oberen zehn Prozent der Bevölkerung besitzen rund zwei Drittel des gesamten Nettovermögens. Die untere Hälfte teilt sich etwa ein Prozent.
+Deutschland gilt als eines der reichsten Länder der Welt. Doch wie ist dieser Wohlstand verteilt? Die Antwort fällt ernüchternd aus: Die oberen zehn Prozent der Bevölkerung besitzen rund 61 Prozent des gesamten Nettovermögens. Die untere Hälfte besitzt 2,3 Prozent. Beim reinen Geldvermögen ist die Konzentration noch stärker: Die obersten zehn Prozent halten dort über 70 Prozent, die untere Hälfte unter ein Prozent.
 
 Diese Zahlen stammen nicht aus politischen Kampagnen, sondern aus den Erhebungen der Deutschen Bundesbank, des Deutschen Instituts für Wirtschaftsforschung und der Europäischen Zentralbank. Sie sind öffentlich zugänglich, wissenschaftlich fundiert und weitgehend unbestritten.
 

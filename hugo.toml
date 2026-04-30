@@ -4,7 +4,9 @@ defaultContentLanguage = 'de'
 title = 'wohlstandsillusion.de'
 
 [params]
-  description = 'Fakten zur Vermögensverteilung in Deutschland und ihren Folgen für Sozialstaat, Renten, Pflege und Steuergerechtigkeit.'
+  tagline = 'Daten zur Vermögensverteilung in Deutschland'
+  description = 'Sachliche Daten und Hintergründe zur Vermögensverteilung in Deutschland. Quellen: Bundesbank, DIW, EZB, Statistisches Bundesamt. Themen: Vermögen, Renten, Pflege, Erbschaft, Steuern, Reallöhne.'
+  ogImage = '/images/og-image.png'
 
 [markup]
   [markup.goldmark]
