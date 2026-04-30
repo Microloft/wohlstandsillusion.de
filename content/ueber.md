@@ -11,7 +11,7 @@ Diese Seite macht diese Daten zugänglich, ordnet sie ein und stellt Zusammenhä
 
 ## Über den Autor
 
-![Platzhalter-Foto](/images/author-placeholder.svg)
+<img class="author-photo" src="/images/dirk-witte.jpg" srcset="/images/dirk-witte.jpg 1x, /images/dirk-witte@2x.jpg 2x" alt="Porträtfoto von Dirk Witte" width="160" height="160">
 
 **Dirk Witte** lebt in Siegburg und arbeitet in Bonn.
 

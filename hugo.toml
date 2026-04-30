@@ -18,7 +18,7 @@ title = 'wohlstandsillusion.de'
     [markup.goldmark.extensions]
       typographer = true
     [markup.goldmark.renderer]
-      unsafe = false
+      unsafe = true
 
 [sitemap]
   changefreq = 'monthly'
