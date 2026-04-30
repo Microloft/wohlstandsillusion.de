@@ -36,9 +36,11 @@ fi
 
 echo "=== Deploy nach $HOST startet ==="
 
-# Passwort via stdin an plink, dort von 'read' empfangen und an sudo -Sv weitergegeben
-# Anschließend deploy.sh aufrufen (sudo-Timestamp ist dann frisch)
-cat "$SECRET_FILE" | "$PLINK" -batch -i "$KEY" "$HOST" \
-  "read PW && echo \"\$PW\" | sudo -Sv && bash $REMOTE_DEPLOY"
+# Passwort via stdin an plink, dort von 'read' empfangen und an sudo -Sv weitergegeben.
+# Newline anhängen für den Fall, dass die Secret-Datei keine Zeilenende-Newline hat
+# (read würde sonst EOF vor Newline mit Exit 1 quittieren).
+# Anschließend deploy.sh aufrufen (sudo-Timestamp ist dann frisch).
+{ cat "$SECRET_FILE"; printf '\n'; } | "$PLINK" -batch -i "$KEY" "$HOST" \
+  "IFS= read -r PW && echo \"\$PW\" | sudo -Sv && bash $REMOTE_DEPLOY"
 
 echo "=== Fertig: https://wohlstandsillusion.de/ ==="
