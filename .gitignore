@@ -14,3 +14,8 @@ Desktop.ini
 *~
 .vscode/
 .idea/
+
+# Lokale Secrets (nie committen)
+*.secret
+.env
+.env.local
