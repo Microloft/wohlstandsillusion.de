@@ -60,12 +60,7 @@ Außerdem ändert die Augmented-Wealth-Methode nichts an der innerdeutschen Vert
 
 Ein verbreitetes Argument lautet: Den Deutschen bleibt einfach weniger zum Leben übrig, weil der Staat zu viel abnimmt. Ein Blick auf die Daten widerlegt das.
 
-Die gesamte Steuer- und Abgabenquote, also alles was an Staat und Sozialversicherung geht, im Verhältnis zur Wirtschaftsleistung, lag 2023 laut Bundesfinanzministerium bei folgenden Werten:
-
-- Frankreich: 43,8 Prozent
-- Italien: 42,8 Prozent
-- Deutschland: 38,1 Prozent
-- Spanien: rund 36,7 Prozent
+Die gesamte Steuer- und Abgabenquote, also alles was an Staat und Sozialversicherung geht, im Verhältnis zur Wirtschaftsleistung, lag 2023 laut Bundesfinanzministerium bei folgenden Werten: Frankreich 43,8 Prozent, Italien 42,8 Prozent, Deutschland 38,1 Prozent, Spanien rund 36,7 Prozent.
 
 Frankreich und Italien holen ihren Bürgern also mehr aus der Tasche als Deutschland, nicht weniger. Trotzdem haben deren Bürger im Median mehr Vermögen.
 
@@ -85,6 +80,16 @@ Die deutsche Wiedervereinigung wirkt bis heute statistisch nach. In Ostdeutschla
 
 Auch dieser Effekt ist real. Er erklärt einen Teil des niedrigen Bundes-Medians. Aber er erklärt nicht, warum der Westen allein im europäischen Vergleich nicht weiter vorne liegt. Und er ändert nichts an der hohen innerdeutschen Konzentration, die in Ost wie West besteht.
 
+### Einwand 6: Der demografische Wandel
+
+Eine alternde Gesellschaft mit niedriger Geburtenrate verändert strukturell, wie sich Vermögen verteilt. Wenn weniger junge Menschen nachkommen und ältere länger leben, konzentriert sich Vermögen automatisch in höheren Altersgruppen. In einer schrumpfenden Bevölkerung wird auch der Aufbau von Vermögen für jüngere Generationen schwieriger, weil Wohnraum knapp und teuer bleibt, während Arbeitsmärkte unter Druck stehen.
+
+Das ist ein realer Befund, der politisch ernst genommen werden muss. Er beantwortet aber nicht die Frage, warum Deutschland im internationalen Vergleich anders dasteht als seine Nachbarn.
+
+Italien hat eine Geburtenrate von 1,18 Kindern pro Frau und ein Medianalter von 48,4 Jahren. Damit ist Italien demografisch in deutlich schlechterer Lage als Deutschland mit einer Geburtenrate von 1,35 und einem Medianalter von rund 45 Jahren. Spanien liegt ähnlich. Trotzdem hat der typische Italiener fast doppelt so viel Vermögen wie der typische Deutsche.
+
+Wenn Demografie die Hauptursache für die Vermögenslücke wäre, müssten Italien und Spanien noch schlechter dastehen als Deutschland. Tun sie aber nicht. Demografie ist also ein wichtiges Thema für sich, aber sie erklärt nicht das spezifische deutsche Ergebnis im Vergleich.
+
 ## Was bleibt
 
 Wenn man alle diese Einwände sauber abzieht, bleibt eine Erkenntnis stehen: Deutschland ist als Land reich. Der typische Deutsche ist es nicht. Die Lücke zwischen dem rechnerischen Wohlstand des Landes und dem tatsächlichen Wohlstand der mittleren Bevölkerung ist auffällig groß und größer als in vergleichbaren europäischen Ländern.
@@ -98,3 +103,7 @@ Damit stellt sich die nächste Frage: Wenn das Vermögen in Deutschland nicht in
 - Deutsche Bundesbank: Distributional Wealth Accounts: <https://www.bundesbank.de/de/presse/pressenotizen/bundesbank-veroeffentlicht-verteilungsbasierte-vermoegensbilanz-der-privaten-haushalte-in-deutschland-921296>
 - Bundesfinanzministerium: Monatsbericht August 2025, Steuer- und Abgabenquoten im internationalen Vergleich
 - OECD: Taxing Wages 2025, Country Note Germany
+- Eurostat: Geburtenraten in den Mitgliedstaaten der EU, 2023/2024
+- ISTAT: Demografische Daten Italien 2024
+- OECD: Society at a Glance 2024
+- Statistisches Bundesamt: Geburtenziffer Deutschland 2024
