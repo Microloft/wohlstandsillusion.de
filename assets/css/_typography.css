@@ -46,6 +46,10 @@ h3 {
   margin-bottom: var(--space-sm);
 }
 
+.prose > *:first-child {
+  margin-top: 0;
+}
+
 .prose p {
   margin-bottom: var(--space-md);
   hyphens: auto;
